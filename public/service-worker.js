@@ -1,4 +1,4 @@
-const CACHE_NAME = 'Powerking-tips-cache';
+const CACHE_NAME = 'GoalGenie-cache';
 const urlsToCache = [
     '/',
     '/index.html',

@@ -61,20 +61,20 @@ export default function Tips({ userData }) {
   }, []);*/
 
   useEffect(() => {
-  let dates = [];
-  const today = new Date();
-  
-  for (let i = 0; i < 7; i++) {
-    let date = new Date(today);
-    date.setDate(date.getDate() - i);
-    // Use local date methods instead of ISO string
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
-    dates.push(`${year}-${month}-${day}`);
-  }
-  setDays(dates.reverse());
-}, []);
+    let dates = [];
+    const today = new Date();
+
+    for (let i = 0; i < 7; i++) {
+      let date = new Date(today);
+      date.setDate(date.getDate() - i);
+      // Use local date methods instead of ISO string
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      dates.push(`${year}-${month}-${day}`);
+    }
+    setDays(dates.reverse());
+  }, []);
 
   useEffect(() => {
     days && setCurrentDate(days[days.length - 1])
@@ -131,10 +131,10 @@ export default function Tips({ userData }) {
   }*/
 
   const returnDate = (dateString) => {
-  const date = new Date(dateString);
-  const options = { weekday: 'long', day: 'numeric' };
-  return date.toLocaleDateString('en-US', options);
-};
+    const date = new Date(dateString);
+    const options = { weekday: 'long', day: 'numeric' };
+    return date.toLocaleDateString('en-US', options);
+  };
 
   /* const returnDate = (dateString) => {
     const [year, month, day] = dateString.split('-').map(Number);
@@ -165,7 +165,7 @@ export default function Tips({ userData }) {
 
   return (
     <div className="tips">
-      <AppHelmet title={"Powerking Tips"} location={'/'} />
+      <AppHelmet title={"Goal Genie"} location={'/'} />
       <div className='container'>
         <div className="filter-wrapper">
           <p>{formattedDate}</p>

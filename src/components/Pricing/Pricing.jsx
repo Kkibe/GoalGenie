@@ -15,7 +15,7 @@ export default function Pricing() {
         {
             id: 1,
             title: "Silver",
-            price: 250,
+            price: 100,
             duration: "/Day",
             features: [
                 "Every day is game day! Check out our daily tips and win big!",
@@ -27,7 +27,7 @@ export default function Pricing() {
             id: 2,
             title: "Gold",
             //slogan: "30% cashback on your first purchase",
-            price: 800,
+            price: 350,
             duration: "/Week",
             features: [
                 "Get the scoop on this week’s matches",
@@ -39,7 +39,7 @@ export default function Pricing() {
             id: 3,
             title: "Platinum",
             //slogan: "50% cashback on your first purchase",
-            price: 3000,
+            price: 1200,
             duration: "/Month",
             features: [
                 "Plan ahead with our monthly predictions.",
